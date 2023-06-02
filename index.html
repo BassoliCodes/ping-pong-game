@@ -5,6 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PingPong Game - BassoliCodes</title>
+  <style>
+    * {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
 <body>
   <canvas></canvas>
@@ -12,11 +19,11 @@
     const canvasElement = document.querySelector('canvas');
     const canvasContext = canvasElement.getContext('2d');
 
+    // Window sizes
+    const windowWidth = window.innerWidth
+    const windowHeight = window.innerHeight
+
     function setup() {
-
-      const windowWidth = window.width
-      const windowHeight = window.height
-
       canvasElement.width = windowWidth
       canvasElement.height = windowHeight
 
@@ -25,6 +32,8 @@
     }
 
     function draw() {
+      canvasContext.fillStyle = "#286047"
+      canvasContext.fillRect(0, 0, windowWidth, windowHeight)
     }
 
     setup();
