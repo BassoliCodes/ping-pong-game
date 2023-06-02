@@ -7,6 +7,28 @@
   <title>PingPong Game - BassoliCodes</title>
 </head>
 <body>
-  <h1>iniciando a criação do jogo...</h1>
+  <canvas></canvas>
+  <script>
+    const canvasElement = document.querySelector('canvas');
+    const canvasContext = canvasElement.getContext('2d');
+
+    function setup() {
+
+      const windowWidth = window.width
+      const windowHeight = window.height
+
+      canvasElement.width = windowWidth
+      canvasElement.height = windowHeight
+
+      canvasContext.width = windowWidth
+      canvasContext.height = windowHeight
+    }
+
+    function draw() {
+    }
+
+    setup();
+    draw();
+  </script>
 </body>
 </html>
